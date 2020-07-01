@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "parcial-ranquileo"
+    }
+  },
+  "defaultProject": "parcial-ranquileo",
+  "cli": {
+    "analytics": false
+  }
 }
