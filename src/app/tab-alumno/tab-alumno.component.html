@@ -1,1 +1,43 @@
 <p>tab-alumno works!</p>
+
+<mat-table [dataSource]="dataSource" class="mat-elevation-z8" #table >
+  
+    <ng-container matColumnDef="nombre">
+      <mat-header-cell *matHeaderCellDef>Nombre</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.nombre}} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="apellido">
+      <mat-header-cell *matHeaderCellDef>Apellido</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.apellido}} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="edad">
+      <mat-header-cell *matHeaderCellDef>Edad</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.edad}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="materia">
+      <mat-header-cell *matHeaderCellDef>Materia</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.materia}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="fechacursada">
+        <mat-header-cell *matHeaderCellDef>Fecha cursada</mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.fechacursada}} </mat-cell>
+      </ng-container>
+
+
+
+    <ng-container matColumnDef="editar">
+      <mat-header-cell *matHeaderCellDef>Editar</mat-header-cell>
+      <mat-cell *matCellDef="let element">
+        <button mat-mini-fab color="warn" (click)="editar(element)" >
+          <mat-icon>create</mat-icon>
+        </button>
+      </mat-cell>
+    </ng-container>
+  
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>

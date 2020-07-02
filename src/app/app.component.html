@@ -1,4 +1,7 @@
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item routerLink="/alumno">Crear Alumno</button>
+  <button mat-menu-item routerLink="/tab-alumno">Tabla de Alumnos</button>
+</mat-menu>
 
-
-<app-alumno></app-alumno>
 <router-outlet></router-outlet>

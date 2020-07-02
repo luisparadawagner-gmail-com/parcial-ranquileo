@@ -16,7 +16,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatTableModule} from '@angular/material/table';
 import {MatIconModule} from '@angular/material/icon';
-
+import {ComponentConsultarService} from 'src/app/servicio/consultar-alumno.service'
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +39,7 @@ import {MatIconModule} from '@angular/material/icon';
     MatTableModule,
     MatIconModule,
   ],
-  providers: [],
+  providers: [ComponentConsultarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

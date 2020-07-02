@@ -1,0 +1,8 @@
+[
+{ "nombre": "maxi","apellido": "ranquileo", "edad": 30,"materia":"Lengua","fechacursada": "Segundo"},
+{ "nombre": "nico","apellido": "gonzales", "edad": 21,"materia":"Web","fechacursada": "Tercero"},
+{ "nombre": "ignacio","apellido": "ortiz", "edad": 32,"materia":"Fisica","fechacursada": "Segundo"},
+{ "nombre": "fabricio","apellido": "villa", "edad": 25,"materia":"Sistema","fechacursada": "primero"}
+
+
+]
